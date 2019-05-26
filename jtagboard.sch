@@ -1,0 +1,117 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J1
+U 1 1 5CEB0ADC
+P 2850 2200
+F 0 "J1" H 2321 2246 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 2321 2155 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 3300 1150 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 2500 950 50  0001 C CNN
+	1    2850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J2
+U 1 1 5CEB22F6
+P 5050 2100
+F 0 "J2" H 5078 2076 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 5078 1985 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5050 2100 50  0001 C CNN
+F 3 "~" H 5050 2100 50  0001 C CNN
+	1    5050 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 1900 0    50   Input ~ 0
+3.3v
+Wire Wire Line
+	4700 1900 4850 1900
+Text GLabel 4700 2000 0    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	4700 2000 4850 2000
+Text GLabel 4700 2100 0    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	4700 2100 4850 2100
+Text GLabel 4700 2200 0    50   Input ~ 0
+SWO
+Wire Wire Line
+	4700 2200 4850 2200
+Text GLabel 4700 2300 0    50   Input ~ 0
+NRST
+Text GLabel 4700 2400 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4700 2400 4850 2400
+Wire Wire Line
+	4700 2300 4850 2300
+$Comp
+L Connector:Conn_01x05_Female J3
+U 1 1 5CEB472D
+P 5050 2850
+F 0 "J3" H 5078 2876 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 5078 2785 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5050 2850 50  0001 C CNN
+F 3 "~" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 2650 0    50   Input ~ 0
+3.3v
+Wire Wire Line
+	4700 2650 4850 2650
+Text GLabel 4700 2750 0    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	4700 2750 4850 2750
+Text GLabel 4700 2850 0    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	4700 2850 4850 2850
+Wire Wire Line
+	4700 2950 4850 2950
+Text GLabel 4700 3050 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4700 3050 4850 3050
+Text GLabel 4700 2950 0    50   Input ~ 0
+SWO
+Text GLabel 2750 1300 1    50   Input ~ 0
+3.3v
+Wire Wire Line
+	2750 1400 2750 1300
+Text GLabel 3500 2200 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	3450 2200 3500 2200
+Text GLabel 3500 2300 2    50   Input ~ 0
+SWO
+Wire Wire Line
+	3450 2300 3500 2300
+Text GLabel 3500 2100 2    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	3450 2100 3500 2100
+Text GLabel 2750 3100 3    50   Input ~ 0
+GND
+Wire Wire Line
+	2750 3100 2750 3000
+Text GLabel 3500 1800 2    50   Input ~ 0
+NRST
+Wire Wire Line
+	3450 1800 3500 1800
+$EndSCHEMATC
